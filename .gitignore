@@ -1,0 +1,11 @@
+.idea
+*.pyc
+*.zip
+*.pth
+*.tar
+*.weights
+*.
+*thirdparty
+*build
+*dist
+*retinaface.egg-info
