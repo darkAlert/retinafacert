@@ -4,12 +4,12 @@ import argparse
 import torch
 import torch.backends.cudnn as cudnn
 import numpy as np
-from data import cfg_mnet, cfg_re50
-from layers.functions.prior_box import PriorBox
-from utils.nms.py_cpu_nms import py_cpu_nms
+from retinaface.data import cfg_mnet, cfg_re50
+from retinaface.layers.functions.prior_box import PriorBox
+from retinaface.utils.nms.py_cpu_nms import py_cpu_nms
 import cv2
-from models.retinaface import RetinaFace
-from utils.box_utils import decode, decode_landm
+from retinaface.models.retinaface import RetinaFace
+from retinaface.utils.box_utils import decode, decode_landm
 import time
 import pickle
 
@@ -82,6 +82,7 @@ if __name__ == '__main__':
 	args = parse_args()
 	args.src_dir = '/home/darkalert/KazendiJob/Data/HoloVideo/Data/frames/person_1/light-100_temp-5600/hololens/freestyle/cam1'
 	args.dst_dir = '/home/darkalert/KazendiJob/Data/HoloVideo/Data/test/faces/andrey'
+	args.trained_model = '/home/darkalert/builds/RetinaFace/weights/Resnet50_Final.pth'
 	args.viz_image = False
 	# args.img_width = 1080
 
