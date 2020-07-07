@@ -83,6 +83,7 @@ if __name__ == '__main__':
 	args.src_dir = '/home/darkalert/KazendiJob/Data/HoloVideo/Data/frames/person_1/light-100_temp-5600/hololens/freestyle/cam1'
 	args.dst_dir = '/home/darkalert/KazendiJob/Data/HoloVideo/Data/test/faces/andrey'
 	args.trained_model = '/home/darkalert/builds/RetinaFace/weights/Resnet50_Final.pth'
+	# args.network = 'mobile0.25'
 	args.viz_image = False
 	# args.img_width = 1080
 
