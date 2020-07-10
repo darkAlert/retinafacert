@@ -4,12 +4,12 @@ import argparse
 import torch
 import torch.backends.cudnn as cudnn
 import numpy as np
-from retinaface.data import cfg_mnet, cfg_re50
-from retinaface.layers.functions.prior_box import PriorBox
-from retinaface.utils.nms.py_cpu_nms import py_cpu_nms
+from retinart.data import cfg_mnet, cfg_re50
+from retinart.layers.functions.prior_box import PriorBox
+from retinart.utils.nms.py_cpu_nms import py_cpu_nms
 import cv2
-from retinaface.models.retinaface import RetinaFace
-from retinaface.utils.box_utils import decode, decode_landm
+from retinart.models.retinaface import RetinaFace
+from retinart.utils.box_utils import decode, decode_landm
 import time
 import pickle
 
