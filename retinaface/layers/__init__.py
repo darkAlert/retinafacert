@@ -1,2 +1,2 @@
-from .functions import *
-from .modules import *
+from retinaface.functions import *
+from retinaface.modules import *
